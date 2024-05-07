@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALUMNO</title>
+  
+<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="local.css">
+  
+</head>
+
+<body class="text-center m-auto w-75">
+
+<div>
+  
+<h1>LOCAL STORAGE MODAL</h1></div>
+
+<br><br>
+
+  <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#agregarR">modal<i class="fas fa-gear"></i></button>
+<br><br><br>
+  <div id="res"></div>
+
+  <div class="modal fade" id="agregarR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 w-100 m-auto" id="exampleModalLabel"> Registros de alumnos</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" class="form-control text-center">
+
+          <label for="ap">Apellido Paterno:</label>
+          <input type="text" id="ap" class="form-control text-center">
+
+          <label for="am">Apellido Materno:</label>
+          <input type="text" id="am" class="form-control text-center">
+
+          <label for="g">Grupo:</label>
+          <select name="grupo" id="g" class="form-select text-center">
+            <option value="401">401</option>
+            <option value="402">402</option>
+            <option value="403">403</option>
+            <option value="404">404</option>
+            <option value="405">405</option>
+            <option value="406">406</option>
+            <option value="407">407</option>
+          </select>
+
+          <label for="c">Carrera:</label>
+          <select name="carrera" id="c" class="form-select text-center">
+            <option value="Ventas">Ventas</option>
+            <option value="Programación">Programación</option>
+            <option value="Máquinas">Máquinas</option>
+          </select>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="borrar" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" id="agregar" class="btn btn-success" data-bs-dismiss="modal" aria-label="close">
+            <i class="fas fa-save mx-2"></i> Guardar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="modal fade" id="actualizar2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 w-100 m-auto" id="exampleModalLabel">Actualización de alumnos</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nom" class="form-control text-center">
+
+          <label for="ap">Apellido Paterno:</label>
+          <input type="text" id="apa" class="form-control text-center">
+
+          <label for="am">Apellido Materno:</label>
+          <input type="text" id="ama" class="form-control text-center">
+
+          <label for="g">Grupo:</label>
+          <select name="grupo" id="gr" class="form-select text-center">
+            <option value="401">401</option>
+            <option value="402">402</option>
+            <option value="403">403</option>
+            <option value="404">404</option>
+            <option value="405">405</option>
+            <option value="406">406</option>
+            <option value="407">407</option>
+          </select>
+
+          <label for="c">Carrera:</label>
+          <select name="carrera" id="ca" class="form-select text-center">
+            <option value="Ventas">Ventas</option>
+            <option value="Programación">Programación</option>
+            <option value="Máquinas">Máquinas</option>
+          </select>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="borrar" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" id="actualizar" class="btn btn-success" data-bs-dismiss="modal" aria-label="close">
+            <i class="fas fa-save mx-2"></i> Guardar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="a.js"></script>
+</body>
+
+</html>
